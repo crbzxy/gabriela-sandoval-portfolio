@@ -1,3 +1,32 @@
+# Dependencias
+/node_modules
+/.pnp
+.pnp.js
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# Testing
+/coverage
+/.nyc_output
+
+# Producción
+/build
+/dist
+/dist-ssr
+/storybook-static
+/.netlify
+
+# Archivos de desarrollo
+*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+.env.*
+!.env.example
+
 # Logs
 logs
 *.log
@@ -7,18 +36,61 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# Editores e IDEs
+.idea/
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+*.launch
+.settings/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Caché y temporales
+.cache/
+.temp/
+.tmp/
+.eslintcache
+.stylelintcache
+.parcel-cache
+
+# Informes y estadísticas
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+stats.json
+bundle-analysis.html
+
+# Tests y coverage
+/cypress/videos/
+/cypress/screenshots/
+/.jest-cache
+/.nyc_output
+
+# Dependiendo de tu flujo de trabajo, podrías querer ignorar estos
+# /public/assets
+# /public/build
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
